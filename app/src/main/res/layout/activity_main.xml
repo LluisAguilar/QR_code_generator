@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/qrstring"
+        android:layout_width="match_parent"
+        android:hint="String for QR code"
+        android:layout_height="wrap_content"
+
+        />
+    <Button
+        android:id="@+id/generatebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate QR code"
+        />
+    <Button
+        android:id="@+id/readbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="read QR code"
+        />
+    <EditText
+        android:id="@+id/scanned_string"
+        android:textSize="14sp"
+        android:hint="String"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/qr_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        />
+
+</LinearLayout>
