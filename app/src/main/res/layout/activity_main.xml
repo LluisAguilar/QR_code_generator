@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_screen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/qrstring"
+        android:id="@+id/qr_string_tv"
         android:layout_width="match_parent"
-        android:hint="String for QR code"
+        android:hint="Paste your text here"
+        android:layout_marginTop="20dp"
         android:layout_height="wrap_content"
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         />
+
     <Button
-        android:id="@+id/generatebtn"
+        android:id="@+id/generate_qr_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Generate QR code"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/qr_string_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         />
-    <Button
-        android:id="@+id/readbtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="read QR code"
-        />
-    <EditText
-        android:id="@+id/scanned_string"
-        android:textSize="14sp"
-        android:hint="String"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
     <ImageView
         android:id="@+id/qr_image"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/generate_qr_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

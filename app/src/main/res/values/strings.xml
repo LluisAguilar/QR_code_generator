@@ -1,5 +1,3 @@
 <resources>
-    <string name="app_name">QRCode Generator test</string>
-    <string name="turn_on_flashlight">Turn on Flashlight</string>
-    <string name="turn_off_flashlight">Turn off Flashlight</string>
+    <string name="app_name">Free QR Code Generator</string>
 </resources>
